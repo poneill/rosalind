@@ -1,0 +1,3 @@
+Code for a certain bioinformatics programming site which may or may
+not be an anagram of "ordinal projects" in order to prevent the lazy
+from finding this repository through a github search.
