@@ -13,7 +13,7 @@ if __name__ == "__main__":
     seqs = parse_fasta_file(sys.argv[1])
     best_name,best_seq = max(seqs,key=lambda (name,seq):gc(seq))
     best_gc_content = gc(best_seq)
-    print best_name[1:]
+    print best_name
     print best_gc_content * 100
     
     
