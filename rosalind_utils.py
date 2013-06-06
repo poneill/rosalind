@@ -1,3 +1,5 @@
+from collections import Counter
+
 def get_input():
     import sys
     filename = sys.argv[1]
@@ -106,3 +108,15 @@ rna_trans_table = {"A":["GCA","GCC","GCG","GCU"],
                      "Y": ["UAU", "UAC"],
                      "V": ["GUA","GUC","GUG","GUU"],
                      "": ["UAA", "UAG","UGA"]}
+
+def consensus(motif):
+    """Return the consensus of a motif"""
+    cols = transpose(motif)
+    return "".join([char for (char,count) in
+                    map(lambda col:max(Counter(col).items(),key=lambda (b,c):c),
+                        cols)])
+
+def transpose(xxs):
+    """Transpose a list of the form [[a1,a2...],[b1,b2..]...] into a
+    list of the form [[a1,b1,...],[a2,b2,...]...]"""
+    return zip(*xxs)
