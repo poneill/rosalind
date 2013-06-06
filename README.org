@@ -1,5 +1,5 @@
 This repository contains code and other materials for an introductory
-bioinformatics class taught at [[http://www.bugssonline.org][BUGSS]] using [[http://www.rosalind.info][Project Rosalind]].
+bioinformatics class taught at [[http://www.bugssonline.org/][BUGSS]] using [[http://www.rosalind.info][Project Rosalind]].
 
 If you have found this repository through a github search for "Project
 Rosalind", please don't cheat yourself of opportunity to work the
