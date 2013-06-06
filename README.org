@@ -1,3 +1,6 @@
-Code for a certain bioinformatics programming site which may or may
-not be an anagram of "ordinal projects" in order to prevent the lazy
-from finding this repository through a github search.
+This repository contains code and other materials for an introductory
+bioinformatics class taught at [[bugssonline.org][BUGSS]] using [[rosalind.info][Project Rosalind]].
+
+If you have found this repository through a github search for "Project
+Rosalind", please don't cheat yourself of opportunity to work the
+problems out for yourself.
