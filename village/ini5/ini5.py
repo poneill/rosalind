@@ -30,11 +30,14 @@ He beat a very brave retreat
 
 import sys
 
+def even_numbered_lines(lines):
+    return [line for (i,line) in enumerate(lines) if i % 2 == 1]
+
 if __name__ == "__main__":
     filename = sys.argv[1]
     with open(filename) as f:
         lines = f.readlines()
-    out_lines = [line for i,line in enumerate(lines) if i % 2 == 1]
+    out_lines = even_numbered_lines(lines)
     with open("rosalind_ini5.out",'w') as g:
         for line in out_lines:
             g.write(line)
