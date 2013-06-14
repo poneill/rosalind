@@ -19,8 +19,12 @@ Sample Output
 
 """
 
+def odds(a,b):
+    """Return odd integers from a to b inclusive"""
+    return [i for i in range(a,b+1) if i % 2 == 1]
+    
 if __name__ == "__main__":
     filename = sys.argv[1]
     with open(filename) as f:
         a,b = map(int,f.readline().split(" "))
-        print sum([i for i in range(a,b+1) if i % 2 == 1])
+        print sum(odds(a,b))
