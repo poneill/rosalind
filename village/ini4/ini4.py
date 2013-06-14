@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-import sys
-
 """
 Problem
 
@@ -16,8 +14,9 @@ Sample Dataset
 Sample Output
 
 7500
-
 """
+
+import sys
 
 def odds(a,b):
     """Return odd integers from a to b inclusive"""
