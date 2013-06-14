@@ -5,7 +5,7 @@ if __name__ == "__main__":
     filename = sys.argv[1]
     with open(filename) as f:
         line = f.readline()
-    fields = line.split(" ")
-    a = int(fields[0])
-    b = int(fields[1])
+    a_str,b_str = line.split(" ")
+    a = int(a_str)
+    b = int(b_str)
     print a**2 + b**2
